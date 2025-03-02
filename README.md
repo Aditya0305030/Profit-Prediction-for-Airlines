@@ -1,67 +1,161 @@
 # ✈️ Aviation KPI Dashboard - Power BI & Machine Learning
 
 ## 📌 Project Overview
-This Power BI dashboard provides key insights into aviation performance metrics, focusing on **flight delays, aircraft utilization, revenue, and profitability**. It integrates **Machine Learning (ML) models** to enhance predictions for operational efficiency and financial forecasting.
+This project is a **data-driven aviation analytics dashboard** built using **Power BI and Machine Learning (ML)**. It provides insights into **flight delays, operational efficiency, profitability, and financial forecasting**. The ML models predict **flight delays** and **profitability trends**, helping airlines optimize operations and revenue strategies.
+
+---
+
+## 🎥 Quick Video Preview
+>[Click here to watch a video demo](https://drive.google.com/file/d/1G5MvmnAMsvTS1VBrIzGVAeWNShrAP3a7/view?usp=sharing)
+
+---
 
 ## 🚀 Key Features
-- **Operational Metrics:** Flight delays, turnaround time, fleet availability.
-- **Financial Analysis:** Revenue, operating cost, net profit margin.
-- **Performance Insights:** Load factor, fuel efficiency, maintenance downtime.
-- **Dynamic Filtering:** Flight number, date range, profitability segments.
-- **ML Predictions:** Flight delay forecasting, profitability estimation.
-- **Interactive Visuals:** KPI cards, bar charts, heatmaps, and scatter plots.
+✅ **Real-Time Aviation Performance Metrics** – Track flight delays, turnaround efficiency, and fleet availability.  
+✅ **Financial Analysis & Profitability Forecasting** – Understand revenue, operating cost, and net profit margins.  
+✅ **AI-Powered Delay & Profitability Predictions** – Leverage ML models to forecast delays and revenue trends.  
+✅ **Customizable Data Filters & Slicers** – Filter by flight number, date range, profitability, and delay categories.  
+✅ **Intuitive Visualizations** – Interactive KPI cards, heatmaps, bar charts, and scatter plots.  
+
+---
 
 ## 📊 Data Breakdown
-The dataset consists of **200,000+ records** with **18 columns**:
-- **Flight Performance:** Flight number, departure times, delay minutes.
-- **Operational Efficiency:** Utilization hours, turnaround time, fleet availability.
-- **Financial Metrics:** Revenue, cost, net profit, debt-to-equity ratio.
-- **Key Ratios:** Load factor, revenue per ASK, cost per ASK.
+The dataset includes **200,000+ records** with **18 key aviation metrics**, categorized as:
+
+### **1. Flight Performance Metrics**
+- Flight Number
+- Scheduled vs. Actual Departure Time
+- Delay in Minutes
+- Aircraft Utilization (Hours)
+- Turnaround Time
+- Fleet Availability (%)
+
+### **2. Financial & Operational KPIs**
+- Total Revenue (USD)
+- Operating Cost (USD)
+- Net Profit Margin (%)
+- Revenue per Available Seat Kilometer (ASK)
+- Cost per Available Seat Kilometer (ASK)
+
+### **3. Load Factor & Efficiency Metrics**
+- Passenger Load Factor (%)
+- Fuel Efficiency Ratio
+- Maintenance Downtime (Hours)
+
+---
 
 ## 🔍 Dashboard Insights
-### **1. Delay Analysis**
-- Categorization: **Short (0-30 mins), Medium (31-90 mins), Long (91+ mins)**.
-- ML model predicts expected delays based on flight conditions.
-- Impact of turnaround time on delays.
+### **1. Delay Analysis & Prediction**
+- **Delay Categories:** Short (0-30 mins), Medium (31-90 mins), Long (91+ mins).
+- **Seasonal & Time-of-Day Delay Trends** (Heatmaps & Line Charts).
+- **ML Model Forecasts Delays Based on Flight Conditions.**
 
 ### **2. Profitability Segmentation & Prediction**
-- Flights grouped as **High (>$10K), Medium ($0-$10K), Low (<$0)** profit.
-- Machine Learning predicts future profitability per flight.
-- Comparison of revenue vs. operating costs.
+- **Profitability Segments:**
+  - **High Profit:** Profit > $10,000
+  - **Medium Profit:** Profit between $0 and $10,000
+  - **Low Profit (or Loss-Making Flights):** Profit < $0
+- **ML Model Predicts Future Profitability Per Flight.**
+- **Comparison of Revenue vs. Operating Costs.**
 
 ### **3. Load Factor Optimization**
-- Buckets: **Low (<60%), Medium (61-85%), High (>85%)**.
-- Correlation with revenue per ASK & profitability.
+- **Load Factor Buckets:**
+  - **Low (<60%)** → Underutilized flights.
+  - **Medium (61-85%)** → Moderate efficiency.
+  - **High (>85%)** → Optimized revenue potential.
+- **Correlation Between Load Factor & Profitability.**
+
+---
 
 ## 🤖 Machine Learning Model Details
-- **Algorithms Used:** XGBoost & RandomForestRegressor.
+### **ML Models Used:**
+- **XGBoost & RandomForestRegressor** for regression-based predictions.
 - **Target Predictions:**
-  - **Flight Delay Forecasting:** Predict delay categories (Short, Medium, Long).
-  - **Profitability Prediction:** Estimate revenue and cost for future flights.
-- **Feature Engineering:** Removal of irrelevant columns (Flight Number, Departure Times).
-- **Metrics Evaluated:** Mean Absolute Error (MAE), Mean Squared Error (MSE), R-Squared (R²).
-- **Model Integration:** Predictions are exported as a CSV and visualized in Power BI.
+  - **Flight Delay Forecasting** (Predicts delay categories based on historical flight data.)
+  - **Profitability Estimation** (Predicts revenue and cost trends for upcoming flights.)
+
+### **Feature Engineering:**
+- Removal of irrelevant columns (e.g., Flight Number, Departure Times).
+- Creation of new calculated fields (e.g., Delay Categories, Load Factor Buckets).
+
+### **Model Performance Evaluation:**
+- **Metrics Used:**
+  - Mean Absolute Error (MAE)
+  - Mean Squared Error (MSE)
+  - R-Squared (R²)
+- **Exported Predictions**: Final outputs are saved as CSV and integrated into Power BI for visualization.
+
+---
 
 ## 🛠️ Setup Instructions
-### **Power BI Dashboard**
-1. **Download the dataset** and import it into Power BI.
-2. **Use Power Query** to create calculated columns for:
+### **Power BI Dashboard Setup**
+1. **Import the dataset into Power BI.**
+2. **Use Power Query to create calculated columns for:**
    - Delay Categories
    - Profitability Segments
    - Load Factor Buckets
-3. **Build visualizations** using bar charts, slicers, and KPI cards.
+3. **Build visualizations** using KPI cards, bar charts, and interactive slicers.
 4. **Customize the report** based on business requirements.
 
-### **Machine Learning Pipeline**
-1. **Train the ML model** using `hackFinal_new.ipynb`.
-2. **Generate Predictions** for flight delays and profitability.
-3. **Export Results** as CSV.
-4. **Import Predictions into Power BI** for visualization.
+### **Machine Learning Model Execution**
+1. **Run the `Prediction code.ipynb` notebook to train the model.**
+2. **Generate Predictions for Flight Delays & Profitability.**
+3. **Export Predictions to CSV.**
+4. **Load Predictions into Power BI for Insights.**
+
+---
+
+## 🎤 Group Presentation & Contributions
+### **Project Team Members:**
+👤 **[Member 1 Shivangi Rai]** – Data Scientist & ML Model Developer.  
+👤 **[Member 2 Aditya]** – Power BI Developer & Dashboard Designer.  
+👤 **[Member 3 Ritika Chavhan]** – Data Engineer & Feature Engineering Specialist.  
+
+### **Presentation Structure:**
+1. **Introduction:** Project overview, objectives, and team roles.
+2. **Dataset Explanation:** Key features, KPIs, and structure.
+3. **Power BI Dashboard Walkthrough:** KPI analysis and insights.
+4. **Machine Learning Implementation:** Delay & profitability prediction models.
+
+---
 
 ## 📸 Screenshots
-*(Add Power BI dashboard screenshots here)*
+*(Insert Power BI Dashboard screenshots here)*
 
-## 📢 Feedback & Contributions
-Feel free to **fork this project** and suggest improvements! 🚀
+---
+---
 
+## 📊 Example Dashboard Screenshot
+<img src="Image/Dashboard pic.png" alt="Dasboard" width='600'>
 
+---
+
+## 📢 Contributing
+Contributions are welcome! If you'd like to enhance the project, follow these steps:
+1. Fork the repository 📌
+2. Create a feature branch 🚀
+3. Commit your changes 📝
+4. Submit a pull request 🔄
+
+---
+
+## ✉️ Feedback
+We'd love to hear from you!
+
+---
+
+## 👨‍💻 Author
+- [Aditya](https://github.com/Aditya0305030)
+- [Ritika Chavhan](https://github.com/Ritika-Chavhan)
+- [Shivangi Rai](https://github.com/shivangirai0922)
+
+---
+
+## 🤝 Acknowledgments
+This project is made possible with:
+- **Datasets**: Publicly available Aviation datasets.
+- **Visualization Libraries**: Power Bi and more.
+
+---
+
+⭐ *Star this repository if you found it useful!* ⭐
