@@ -125,8 +125,13 @@ The dataset includes **200,000+ records** with **18 key aviation metrics**, cate
 4.Code
 https://drive.google.com/drive/folders/12e5pKhgBDBSwIz2J-sJ-EeVVAOr_-7lD?usp=drive_link
 
-## 📸 Screenshots
-*(Insert Power BI Dashboard screenshots here)*
+## 📸 Google Drive Link containing:
+.Video Presentation
+2.Dashboard
+3.PPT
+4.Code
+https://drive.google.com/drive/folders/12e5pKhgBDBSwIz2J-sJ-EeVVAOr_-7lD?usp=drive_link
+
 
 ---
 ---
