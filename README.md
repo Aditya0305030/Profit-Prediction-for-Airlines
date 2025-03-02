@@ -128,10 +128,9 @@ The dataset includes **200,000+ records** with **18 key aviation metrics**, cate
 
 
 ---
----
 
 ## 📊 Example Dashboard Screenshot
-<img src="Image/Dashboard pic.png" alt="Dasboard" width='600'>
+<img src="Dashboard pic.png" alt="Dasboard" width='600'>
 
 ---
 
